@@ -80,7 +80,6 @@
 
         &__heading {
             font-size: 3rem;
-            text-align: center;
         }
 
         &__paragraph {
@@ -90,7 +89,7 @@
 
         &__video {
             width: 100%;
-            height: 40rem;
+            // height: 40rem;
         }
     }
 </style>

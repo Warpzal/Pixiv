@@ -60,13 +60,14 @@
         &__paragraph {
             font-size: 1.6rem;
             font-weight: bold;
+            text-align: center;
         }
 
         &__video {
             width: 100%;
         }
 
-        @media (min-width: 800px) {
+        @media (min-width: 1000px) {
             padding: 0 20%;
             &__heading {
                 font-size: 4rem;
