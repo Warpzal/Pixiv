@@ -3,6 +3,7 @@
     import Section_A from './components/sections/Section_A.vue'
     import Section_B from './components/sections/Section_B.vue'
     import Section_C from './components/sections/Section_C.vue'
+    import Section_D from './components/sections/Section_D.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@
     <Section_A />
     <Section_B />
     <Section_C />
+    <Section_D />
 </template>
 
 <style lang="scss">

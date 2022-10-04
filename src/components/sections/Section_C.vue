@@ -3,7 +3,7 @@
         <div class="column">
             <video
                 class="about__video"
-                src="@/assets/Section_B_1.mp4"
+                src="@/assets/Section_C_1.mp4"
                 autoplay
                 playsinline
                 loop
@@ -22,7 +22,7 @@
         <div class="column">
             <video
                 class="about__video"
-                src="@/assets/Section_B_2.mp4"
+                src="@/assets/Section_C_2.mp4"
                 autoplay
                 playsinline
                 loop
@@ -57,7 +57,7 @@
         line-height: 3.5rem;
         font-weight: bold;
 
-        padding: 0 5%;
+        padding: 5rem 5%;
         margin: 0 auto;
 
         &::before {
@@ -89,7 +89,6 @@
 
         &__video {
             width: 100%;
-            // height: 40rem;
         }
     }
 </style>
