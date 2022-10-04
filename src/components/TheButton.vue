@@ -21,5 +21,9 @@
         border: none;
         border-radius: 8rem;
         font-weight: bold;
+        transition: 0.4s all;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 </style>

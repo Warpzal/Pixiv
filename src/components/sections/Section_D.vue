@@ -83,7 +83,6 @@
                 padding: 1rem 15%;
                 text-align: center;
                 color: white;
-                font-size: 3.2rem;
             }
         }
 
