@@ -16,9 +16,30 @@
             </div>
         </div>
         <div class="grid">
-            <h2 class="features__feature">Discovering Works</h2>
-            <h2 class="features__feature">Creating and Browsing</h2>
-            <h2 class="features__feature">Sharing your Creations</h2>
+            <div class="features__feature">
+                <h2>Discovering Works</h2>
+                <svg viewBox="0 0 59 12">
+                    <path
+                        d="M29.6022 7.9494L57.9905 0.54834L58.7473 3.45131L29.6 11.0502L0.619583 3.45076L1.38054 0.548877L29.6022 7.9494Z"
+                    ></path>
+                </svg>
+            </div>
+            <div class="features__feature">
+                <h2>Creating and Browsing</h2>
+                <svg viewBox="0 0 59 12">
+                    <path
+                        d="M29.6022 7.9494L57.9905 0.54834L58.7473 3.45131L29.6 11.0502L0.619583 3.45076L1.38054 0.548877L29.6022 7.9494Z"
+                    ></path>
+                </svg>
+            </div>
+            <div class="features__feature">
+                <h2>Sharing your Creations</h2>
+                <svg viewBox="0 0 59 12">
+                    <path
+                        d="M29.6022 7.9494L57.9905 0.54834L58.7473 3.45131L29.6 11.0502L0.619583 3.45076L1.38054 0.548877L29.6022 7.9494Z"
+                    ></path>
+                </svg>
+            </div>
         </div>
     </div>
 </template>
@@ -27,9 +48,13 @@
     .grid {
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         width: 100%;
         height: 100%;
+        @media (min-width: 800px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+        }
     }
 
     .column {
@@ -37,39 +62,51 @@
     }
 
     .features {
+        cursor: pointer;
         position: relative;
         width: 100%;
         height: 80vh;
         isolation: isolate;
+        overflow: hidden;
 
         &__heading {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            padding: 1rem 5%;
-            text-align: center;
-            color: white;
-            font-size: 3.2rem;
+            display: none;
             @media (min-width: 800px) {
+                display: flex;
                 font-size: 5rem;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                z-index: 1000;
+                padding: 1rem 15%;
+                text-align: center;
+                color: white;
+                font-size: 3.2rem;
             }
         }
 
         &__feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             position: relative;
+            isolation: isolate;
+            z-index: 1000;
             padding: 2rem 1rem;
-            text-align: center;
-            color: white;
             align-self: flex-end;
             font-size: 1.6rem;
 
+            h2 {
+                text-align: center;
+                color: white;
+            }
+
             &::before {
                 content: '';
-                z-index: 1;
+                z-index: -1;
                 display: block;
                 position: absolute;
                 bottom: 0px;
@@ -83,8 +120,19 @@
                 );
             }
 
+            svg {
+                margin-top: 1rem;
+                display: block;
+                padding: 1rem;
+                width: 8rem;
+                color: white;
+                fill: white;
+            }
+
             @media (min-width: 800px) {
-                font-size: 2.4rem;
+                h2 {
+                    font-size: 2.4rem;
+                }
             }
         }
 
