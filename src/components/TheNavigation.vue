@@ -21,6 +21,8 @@
 <style lang="scss" scoped>
     .nav {
         position: sticky;
+        position: fixed;
+        top: 0;
         display: grid;
         isolation: isolate;
         z-index: 10000;

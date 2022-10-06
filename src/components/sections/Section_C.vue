@@ -60,17 +60,24 @@
         padding: 5rem 5%;
         margin: 0 auto;
         background-color: white;
-        &::before {
+        &::before,
+        &::after {
             content: '';
             position: absolute;
             z-index: -1;
             inset: 0;
+        }
 
+        &::before {
+            background-color: white;
+        }
+
+        &::after {
             opacity: 0.3;
             background: url('@/assets/Section_A_4.png');
         }
 
-        * {
+        d * {
             padding-top: var(--padding);
         }
 

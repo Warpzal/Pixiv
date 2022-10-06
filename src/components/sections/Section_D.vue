@@ -68,6 +68,17 @@
         height: 80vh;
         isolation: isolate;
         overflow: hidden;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+        }
+
+        &::before {
+            background-color: white;
+        }
 
         &__heading {
             display: none;
