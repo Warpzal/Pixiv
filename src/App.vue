@@ -48,11 +48,11 @@
     //DEBUG
     // * {
     //     background: rgba(156, 55, 55, 0.1) !important;
-    //     img,
-    //     video,
-    //     svg {
-    //         width: 0% !important;
-    //     }
+    //     // img,
+    //     // video,
+    //     // svg {
+    //     //     width: 0% !important;
+    //     // }
     // }
 
     // GLOBAL VARIABLES
@@ -83,15 +83,6 @@
         }
     }
 
-    .app {
-        // position: relative;
-        // isolation: isolate;
-    }
-
-    .div {
-        padding: 500px 100px;
-    }
-
     .parallax__section {
         width: 100%;
         height: 80vh;
@@ -100,6 +91,7 @@
         background: #ffffdb;
         perspective: 10px;
     }
+
     .lorem {
         background: gray;
         padding: 5rem;

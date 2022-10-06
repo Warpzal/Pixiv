@@ -145,6 +145,8 @@
             max-height: 14rem;
             overflow-y: auto;
 
+            @media (min-width: 800px) {
+            }
             &--1,
             &--3 {
                 background: #ff9601;
@@ -166,7 +168,6 @@
         }
     }
     .parallax {
-        // background: yellow;
         position: relative;
         display: flex;
         justify-content: center;
@@ -219,8 +220,12 @@
         }
 
         &--1 {
+            display: none;
             font-size: 7rem;
             margin-bottom: 0.1rem;
+            @media (min-width: 800px) {
+                display: block;
+            }
         }
 
         &--2 {
@@ -228,7 +233,10 @@
         }
         &--2,
         &--3 {
-            font-size: 3.5rem;
+            @media (min-width: 800px) {
+                font-size: 3.5rem;
+            }
+            font-size: 2.5rem;
             background: yellow;
             color: black;
         }
