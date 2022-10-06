@@ -50,8 +50,8 @@
 
     .about {
         position: relative;
-        isolation: isolate;
 
+        z-index: 200000;
         --padding: 2rem;
         letter-spacing: 0.08rem;
         line-height: 3.5rem;
@@ -59,7 +59,7 @@
 
         padding: 5rem 5%;
         margin: 0 auto;
-
+        background-color: white;
         &::before {
             content: '';
             position: absolute;

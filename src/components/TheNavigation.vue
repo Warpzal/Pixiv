@@ -22,7 +22,8 @@
     .nav {
         position: sticky;
         display: grid;
-        z-index: 1000;
+        isolation: isolate;
+        z-index: 10000;
         gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
