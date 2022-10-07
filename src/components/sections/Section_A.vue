@@ -68,10 +68,6 @@
             inset: 0;
         }
 
-        &::before {
-            // background-color: blue;
-        }
-
         @media (min-width: 800px) {
             top: 0;
         }
@@ -82,13 +78,15 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            object-fit: contain;
-            object-position: center;
+            object-fit: cover;
+            object-position: left top;
 
             &--1 {
                 transform: translateZ(-1px) scale(1.1);
-                bottom: 0;
-                object-fit: contain;
+                object-position: bottom;
+                @media (min-width: 800px) {
+                    object-fit: contain;
+                }
             }
             &--2 {
                 transform: translateZ(-3px) scale(1.3);
