@@ -45,6 +45,9 @@
             width: fit-content;
             justify-self: end;
             font-size: 1.2rem;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 </style>

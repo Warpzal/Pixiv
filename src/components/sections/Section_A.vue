@@ -121,11 +121,15 @@
         bottom: 3rem;
         left: 50%;
         transform: translate(-50%, -50%);
+
         padding: 1.3rem 2.7rem;
         font-size: 1.6rem;
 
+        &:hover {
+            transform: scale(1.05) translate(-50%, -50%);
+        }
+
         @media (min-width: 800px) {
-            transform: none;
             left: auto;
             bottom: 5rem;
             right: 3vw;
