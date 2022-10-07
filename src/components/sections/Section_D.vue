@@ -110,6 +110,7 @@
                 padding: 1rem 15%;
                 text-align: center;
                 color: white;
+                z-index: 1;
             }
         }
 
