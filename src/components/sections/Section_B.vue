@@ -24,7 +24,6 @@
 <style lang="scss" scoped>
     .about {
         position: relative;
-        z-index: 1;
         --padding: 8rem;
         letter-spacing: 0.08rem;
         line-height: 3.5rem;
@@ -32,6 +31,7 @@
 
         margin: 0 auto;
         padding: 0 10%;
+        isolation: isolate;
 
         &::before,
         &::after {
@@ -48,6 +48,8 @@
         &::after {
             opacity: 0.3;
             background: url('@/assets/Section_A_2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         * {

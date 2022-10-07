@@ -128,7 +128,6 @@
         left: 0;
         height: 80%;
         padding: 3rem;
-        // z-index: -1;
 
         &__boxes {
             display: flex;
@@ -183,8 +182,8 @@
         }
 
         &::before {
-            // background-color: red;
-            transform: translateZ(-30px) scale(4);
+            background-color: red;
+            transform: translateZ(-70px) scale(8);
         }
 
         img {
@@ -194,19 +193,19 @@
             object-fit: cover;
         }
         &--1 {
-            transform: translateZ(-1px) scale(1.1);
+            transform: translateZ(-40px) scale(5);
         }
         &--2 {
-            transform: translateZ(-3px) scale(1.3);
+            transform: translateZ(-3px) scale(5.3);
         }
         &--3 {
-            transform: translateZ(-10px) scale(2);
+            transform: translateZ(-50px) scale(6);
         }
         &--4 {
-            transform: translateZ(-20px) scale(3);
+            transform: translateZ(-60px) scale(7);
         }
         &--5 {
-            transform: translateZ(-4px) scale(1.4);
+            transform: translateZ(-44px) scale(5.4);
         }
     }
 

@@ -5,18 +5,52 @@
     import Section_C from './components/sections/Section_C.vue'
     import Section_D from './components/sections/Section_D.vue'
     import Section_E from './components/sections/Section_E.vue'
+    import Section_F from './components/sections/Section_E.vue'
 </script>
 
 <template>
-    <TheNavigation />
-    <Section_A />
-    <Section_B />
-    <Section_C />
-    <Section_D />
-    <Section_E />
+    <TheNavigation class="z z--0" />
+    <Section_A class="z z--1" />
+    <Section_B class="z z--2" />
+    <Section_C class="z z--3" />
+    <Section_D class="z z--4" />
+    <Section_E class="z z--5" />
+    <Section_C class="z z--3" />
+    <Section_F class="z z--6" />
+    <!-- <Section_E class="z z--6" /> -->
 </template>
 
 <style lang="scss">
+    .isolation {
+        isolation: isolate;
+        perspective: 10px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .z {
+        &--0 {
+            z-index: 1000;
+        }
+        &--1 {
+            z-index: 100;
+        }
+        &--2 {
+            z-index: 100;
+        }
+        &--3 {
+            z-index: 100;
+        }
+        &--4 {
+            z-index: 100;
+        }
+        &--5 {
+            z-index: 20;
+        }
+        &--6 {
+            z-index: 15;
+        }
+    }
     //DEBUG
     // * {
     //     background: rgba(156, 55, 55, 0.1) !important;

@@ -4,7 +4,6 @@
 
 <template>
     <section class="section">
-        <img src="@/assets/Section_A_4.png" alt="" class="background__image" />
         <div class="background">
             <img
                 src="@/assets/Section_A_4.png"
@@ -36,19 +35,31 @@
             </p>
             <p class="highlight highlight--3">1 month FREE trial</p>
         </div>
+        <TheButton class="button">Start free Trial</TheButton>
     </section>
-    <TheButton class="button">Start free Trial</TheButton>
 </template>
 
 <style lang="scss" scoped>
     .section {
         position: relative;
         margin-top: -60px;
-        z-index: -1;
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        perspective: 10px;
+        transform-style: preserve-3d;
+        isolation: isolate;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+        }
+
+        &::before {
+            background-color: blue;
+        }
 
         @media (min-width: 800px) {
             top: 0;
@@ -75,14 +86,24 @@
                 rgba(0, 0, 0, 0) 100%
             );
         }
+
         &__image {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit: cover;
             object-position: bottom;
-            @media (min-width: 1100px) {
-                height: auto;
+
+            &--1 {
+                bottom: 0;
+                object-fit: contain;
+            }
+            &--4 {
+                object-fit: cover;
+                // transform: translateZ(-1px) scale(1.1);
+            }
+            &--2 {
+                transform: translateZ(-1px) scale(2);
             }
         }
     }
@@ -101,7 +122,6 @@
     }
 
     .button {
-        z-index: 2000;
         position: absolute;
         bottom: 3rem;
         left: 50%;

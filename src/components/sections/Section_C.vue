@@ -1,14 +1,7 @@
 <template>
     <section class="about grid">
         <div class="column">
-            <video
-                class="about__video"
-                src="@/assets/Section_C_1.mp4"
-                autoplay
-                playsinline
-                loop
-            ></video>
-
+            <img class="about__video" src="@/assets/Section_C_1.webp" alt="" />
             <h2 class="about__heading">Better Browsing</h2>
             <p class="about__paragraph">
                 pixiv Premium is a subscription plan that helps you get the best
@@ -20,13 +13,7 @@
         </div>
 
         <div class="column">
-            <video
-                class="about__video"
-                src="@/assets/Section_C_2.mp4"
-                autoplay
-                playsinline
-                loop
-            ></video>
+            <img class="about__video" src="@/assets/Section_C_2.webp" alt="" />
 
             <h2 class="about__heading">Enhanced Creation</h2>
             <p class="about__paragraph">
@@ -50,8 +37,6 @@
 
     .about {
         position: relative;
-
-        z-index: 200000;
         --padding: 2rem;
         letter-spacing: 0.08rem;
         line-height: 3.5rem;
@@ -60,6 +45,8 @@
         padding: 5rem 5%;
         margin: 0 auto;
         background-color: white;
+        isolation: isolate;
+
         &::before,
         &::after {
             content: '';
@@ -75,6 +62,8 @@
         &::after {
             opacity: 0.3;
             background: url('@/assets/Section_A_4.png');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         d * {

@@ -90,7 +90,6 @@
                 height: 100%;
                 align-items: center;
                 justify-content: center;
-                z-index: 1000;
                 padding: 1rem 15%;
                 text-align: center;
                 color: white;
@@ -103,12 +102,11 @@
             align-items: center;
 
             position: relative;
-            isolation: isolate;
-            z-index: 1000;
             padding: 2rem 1rem;
             align-self: flex-end;
             font-size: 1.6rem;
 
+            isolation: isolate;
             h2 {
                 text-align: center;
                 color: white;
@@ -147,7 +145,6 @@
         }
 
         &__image {
-            z-index: -1;
             width: 100%;
             height: 100%;
             mix-blend-mode: multiply;
