@@ -2,11 +2,36 @@
 
 <template>
     <div class="parallax">
-        <img class="parallax--4" src="@/assets/Section_E_4.png" alt="" />
-        <img class="parallax--5" src="@/assets/Section_E_5.png" alt="" />
-        <img class="parallax--3" src="@/assets/Section_E_3.png" alt="" />
-        <img class="parallax--2" src="@/assets/Section_E_2.png" alt="" />
-        <img class="parallax--1" src="@/assets/Section_E_1.png" alt="" />
+        <img
+            class="parallax--4"
+            src="@/assets/Section_E_4.png"
+            loading="lazy"
+            alt=""
+        />
+        <img
+            class="parallax--5"
+            src="@/assets/Section_E_5.png"
+            loading="lazy"
+            alt=""
+        />
+        <img
+            class="parallax--3"
+            src="@/assets/Section_E_3.png"
+            loading="lazy"
+            alt=""
+        />
+        <img
+            class="parallax--2"
+            src="@/assets/Section_E_2.png"
+            loading="lazy"
+            alt=""
+        />
+        <img
+            class="parallax--1"
+            src="@/assets/Section_E_1.png"
+            loading="lazy"
+            alt=""
+        />
         <div class="content">
             <h2 class="highlight highlight--1">Don't miss a thing</h2>
             <div>

@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
     <section class="about">
         <h2 class="about__heading">About "pixiv"</h2>
@@ -31,7 +29,6 @@
 
         margin: 0 auto;
         padding: 0 10%;
-        isolation: isolate;
 
         &::before,
         &::after {

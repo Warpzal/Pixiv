@@ -51,9 +51,25 @@
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
         height: 100%;
+
         @media (min-width: 800px) {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
+        }
+
+        svg {
+            animation: bounce 2s infinite;
+        }
+    }
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0);
         }
     }
 
