@@ -166,7 +166,7 @@
             width: 100%;
             height: 100%;
             mix-blend-mode: multiply;
-
+            filter: blur(2px);
             &--1 {
                 background: url('@/assets/Section_D_1.png') right 30% center /
                     cover no-repeat;
