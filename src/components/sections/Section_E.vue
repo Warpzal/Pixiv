@@ -153,7 +153,6 @@
         left: 0;
         height: 80%;
         padding: 3rem;
-        // z-index: -1;
 
         &__boxes {
             display: flex;
@@ -208,7 +207,6 @@
         }
 
         &::before {
-            // background-color: red;
             transform: translateZ(-30px) scale(4);
         }
 

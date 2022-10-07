@@ -61,6 +61,7 @@
             animation: bounce 2s infinite;
         }
     }
+
     @keyframes bounce {
         0% {
             transform: translateY(0);
@@ -81,7 +82,7 @@
         cursor: pointer;
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         isolation: isolate;
         overflow: hidden;
         &::before,

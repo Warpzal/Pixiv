@@ -3,29 +3,27 @@
 </script>
 
 <template>
-    <section class="section">
-        <div class="background">
-            <img
-                src="@/assets/Section_A_4.png"
-                alt=""
-                class="background__image background__image--4"
-            />
-            <img
-                src="@/assets/Section_A_2.png"
-                alt=""
-                class="background__image background__image--2"
-            />
-            <img
-                src="@/assets/Section_A_3.png"
-                alt=""
-                class="background__image background__image--3"
-            />
-            <img
-                src="@/assets/Section_A_1.png"
-                alt=""
-                class="background__image background__image--1"
-            />
-        </div>
+    <section class="section background">
+        <img
+            src="@/assets/Section_A_4.png"
+            alt=""
+            class="background__image background__image--4"
+        />
+        <img
+            src="@/assets/Section_A_2.png"
+            alt=""
+            class="background__image background__image--2"
+        />
+        <img
+            src="@/assets/Section_A_3.png"
+            alt=""
+            class="background__image background__image--3"
+        />
+        <img
+            src="@/assets/Section_A_1.png"
+            alt=""
+            class="background__image background__image--1"
+        />
 
         <div class="call-to-action">
             <p class="highlight highlight--1">pixiv Premium</p>
@@ -45,34 +43,10 @@
         margin-top: -60px;
         width: 100%;
         height: 100vh;
-        overflow: hidden;
         transform-style: preserve-3d;
-        isolation: isolate;
 
-        &::before,
         &::after {
-            content: '';
-            position: absolute;
             z-index: -1;
-            inset: 0;
-        }
-
-        &::before {
-            background-color: blue;
-        }
-
-        @media (min-width: 800px) {
-            top: 0;
-        }
-    }
-
-    .background {
-        position: relative;
-        height: 100%;
-        inset: 0;
-        transform-style: preserve-3d;
-
-        &::after {
             content: '';
             display: block;
             position: absolute;
@@ -87,23 +61,46 @@
             );
         }
 
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+        }
+
+        &::before {
+            // background-color: blue;
+        }
+
+        @media (min-width: 800px) {
+            top: 0;
+        }
+    }
+
+    .background {
         &__image {
             position: absolute;
             width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            object-position: bottom;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
 
             &--1 {
+                transform: translateZ(-1px) scale(1.1);
                 bottom: 0;
                 object-fit: contain;
             }
-            &--4 {
-                object-fit: cover;
-                // transform: translateZ(-1px) scale(1.1);
-            }
             &--2 {
-                transform: translateZ(-1px) scale(2);
+                transform: translateZ(-3px) scale(1.3);
+            }
+            &--3 {
+                transform: translateZ(-10px) scale(2);
+            }
+            &--4 {
+                transform: translateZ(-20px) scale(3);
+            }
+            &--5 {
+                transform: translateZ(-4px) scale(1.4);
             }
         }
     }

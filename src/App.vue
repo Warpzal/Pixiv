@@ -16,8 +16,6 @@
     <Section_D class="z z--4" />
     <Section_E class="z z--5" />
     <Section_C class="z z--3" />
-    <Section_F class="z z--6" />
-    <!-- <Section_E class="z z--6" /> -->
 </template>
 
 <style lang="scss">
@@ -33,7 +31,7 @@
             z-index: 1000;
         }
         &--1 {
-            z-index: 100;
+            z-index: 20;
         }
         &--2 {
             z-index: 100;
