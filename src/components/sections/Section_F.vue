@@ -33,14 +33,11 @@
 
 <style lang="scss" scoped>
     .grid {
-        margin-top: 5rem;
-        // *:not(:nth-child(1)) *:not(:nth-child(2)) {
-        //     margin-top: 5rem;
-        // }
         * {
             margin-top: 5rem;
         }
         @media (min-width: 1000px) {
+            margin-top: 5rem;
             display: grid;
             gap: 5rem;
             grid-template-columns: repeat(2, 1fr);
