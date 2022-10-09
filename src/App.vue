@@ -22,11 +22,11 @@
     //DEBUG
     // * {
     //     background: rgba(156, 55, 55, 0.1) !important;
-    //     // img,
-    //     // video,
-    //     // svg {
-    //     //     width: 0% !important;
-    //     // }
+    //     img,
+    //     video,
+    //     svg {
+    //         width: 0% !important;
+    //     }
     // }
 
     // GLOBAL VARIABLES

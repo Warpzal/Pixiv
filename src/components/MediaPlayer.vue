@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+    const props = defineProps({
+        image: String,
+    })
+
+    const getImageUrl = (name) => {
+        return new URL(`../assets/${name}`, import.meta.url).href
+    }
+</script>
 
 <template>
     <section class="section">
@@ -13,7 +21,7 @@
         </div>
         <div class="section__content">
             <img
-                src="@/assets/Section_F_2.jpeg"
+                :src="getImageUrl(props.image)"
                 alt=""
                 class="section__image"
             />
@@ -50,14 +58,15 @@
             width: 100%;
             height: auto;
         }
+
         &__menu {
             &-line {
-                &:first-child {
-                    margin-bottom: 0.5rem;
-                }
                 height: 0.5rem;
                 width: 2rem;
                 background: white;
+                &:first-child {
+                    margin-bottom: 0.5rem;
+                }
             }
         }
     }
