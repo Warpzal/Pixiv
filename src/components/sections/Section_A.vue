@@ -123,7 +123,7 @@
         transform: translate(-50%, -50%);
 
         padding: 1.3rem 2.7rem;
-        font-size: 1.6rem;
+        font-size: 2.4rem;
 
         &:hover {
             transform: scale(1.05) translate(-50%, -50%);
@@ -157,7 +157,7 @@
         }
 
         &--1 {
-            font-size: 5rem;
+            font-size: 5.4rem;
             margin-bottom: 0.1rem;
         }
         &--2 {

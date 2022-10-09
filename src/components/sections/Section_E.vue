@@ -33,10 +33,14 @@
             alt=""
         />
         <div class="content">
-            <h2 class="highlight highlight--1">Don't miss a thing</h2>
             <div>
-                <h2 class="highlight highlight--2">Find works you like</h2>
-                <h2 class="highlight highlight--3">amidst your busy days</h2>
+                <h2 class="highlight highlight--1">Don't miss a thing</h2>
+                <div>
+                    <h2 class="highlight highlight--2">Find works you like</h2>
+                    <h2 class="highlight highlight--3">
+                        amidst your busy days
+                    </h2>
+                </div>
             </div>
             <div class="content__boxes">
                 <div class="content__box content__box--1">
@@ -168,8 +172,6 @@
             max-height: 14rem;
             overflow-y: auto;
 
-            @media (min-width: 800px) {
-            }
             &--1,
             &--3 {
                 background: #ff9601;
@@ -263,6 +265,7 @@
         }
 
         &--2 {
+            margin-top: 5rem;
             margin-bottom: 1rem;
         }
         &--2,

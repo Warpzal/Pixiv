@@ -76,9 +76,11 @@
 
         &__heading {
             font-size: 3rem;
+            margin-top: 3rem;
         }
 
         &__paragraph {
+            margin-top: 3rem;
             font-size: 1.6rem;
             font-weight: bold;
         }
