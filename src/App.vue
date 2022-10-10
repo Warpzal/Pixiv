@@ -6,6 +6,7 @@
     import Section_D from './components/sections/Section_D.vue'
     import Section_E from './components/sections/Section_E.vue'
     import Section_F from './components/sections/Section_F.vue'
+    import Section_G from './components/sections/Section_G.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@
     <Section_D class="z z--4" />
     <Section_E class="z z--5" />
     <Section_F class="z z--4" />
+    <Section_G class="z z--4" />
 </template>
 
 <style lang="scss">
