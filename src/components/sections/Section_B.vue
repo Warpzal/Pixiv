@@ -1,15 +1,38 @@
+<script setup>
+    import { gsap } from 'gsap'
+    import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+    import { onMounted } from 'vue'
+
+    onMounted(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from('.animate', {
+            scrollTrigger: {
+                scroller: '#app',
+                trigger: '.animation',
+                toggleActions: 'restart none none none',
+            },
+            // scrollTrigger: '.about',
+            duration: 0.5,
+            opacity: 0,
+            stagger: 0.2,
+            x: '-100%',
+        })
+    })
+</script>
+
 <template>
-    <section class="about">
-        <h2 class="about__heading">About "pixiv"</h2>
-        <p class="about__paragraph">
+    <section class="about animation" ref="about">
+        <h2 class="about__heading animate">About "pixiv"</h2>
+        <p class="about__paragraph animate">
             pixiv is one of the biggest art communities in the world. Here,
             people share their illustrations, manga, and novels of various
             genres. 20,000 works are posted on pixiv every day from creators all
             over the world.
         </p>
 
-        <h2 class="about__heading">About "pixiv Premium"</h2>
-        <p class="about__paragraph">
+        <h2 class="about__heading animate">About "pixiv Premium"</h2>
+        <p class="about__paragraph animate">
             pixiv Premium is a subscription plan that helps you get the best
             experience out of pixiv. There is a yearly plan for 5500 JPY
             (Approx. 55 USD) or a monthly plan for 550 JPY (Approx. 5.50 USD).

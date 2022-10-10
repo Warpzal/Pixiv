@@ -359,6 +359,10 @@
     .ecDumZ {
         transform-origin: 42px 36px;
         fill: white;
+        animation: clock 1.2s infinite 0.5s;
+    }
+    .jVTeqI {
+        animation: clock 1.2s infinite 0.5s;
     }
     .PbkEL {
         fill: rgb(233, 233, 233);
@@ -376,6 +380,14 @@
         fill: rgb(128, 3, 3);
     }
 
+    @keyframes clock {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1turn);
+        }
+    }
     @keyframes shrinkAndGrow {
         0%,
         100% {
